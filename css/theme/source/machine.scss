@@ -1,0 +1,100 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Background of the presentation
+$backgroundColor: #54b3e5;
+$backgroundColor-dark: #2c3a49;
+$backgroundColor-bright: #e7a323;
+
+// Primary/body text
+$mainFont: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+$mainFontSize: 36px;
+$mainColor: #eee;
+
+// Headings
+$headingMargin: 0 0 20px 0;
+$headingFont: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+$headingColor: #eee;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: capitalize;
+$headingTextShadow: none;
+$heading1TextShadow: none;
+
+$serifFont: 'Sentinel SSm A', 'Sentinel SSm B', serif;
+$sansFont: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+
+// Links and actions
+$linkColor: #13DAEC;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+	h1 {
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	h2, h3, h4, h5, h6 {
+		font-weight: 300;
+	}	
+
+	.sans {
+		font-family: $sansFont;
+	}
+
+	.serif {
+		font-family: $serifFont;
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+
+	.heavy {
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.bold {
+		font-weight: 700;
+	}
+
+	.light {
+		font-weight: 300;
+	}
+
+	.rhythm {
+		margin-bottom: 2em;
+	}
+
+	.rhythm-up {
+		margin-top: 2em;
+	}
+}
+
+.bright {
+	body {
+		background-color: $backgroundColor-bright;
+	}
+}
+
+.dark {
+	body {
+		background-color: $backgroundColor-dark;
+	}
+}
