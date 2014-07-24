@@ -142,6 +142,12 @@ body {
   text-transform: uppercase; }
 .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   font-weight: 300; }
+.reveal ul {
+  margin-top: 2em; }
+.reveal li {
+  list-style: none;
+  font-size: 120%;
+  margin-bottom: 1em; }
 .reveal .sans {
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
 .reveal .serif {
@@ -153,7 +159,8 @@ body {
   font-weight: 800;
   text-transform: uppercase; }
 .reveal .bold {
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: uppercase; }
 .reveal .light {
   font-weight: 300; }
 .reveal .rhythm {
@@ -171,6 +178,10 @@ body {
   max-height: none; }
 .reveal .relative {
   position: relative; }
+.reveal .circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
 .reveal .details {
   position: absolute;
   background-color: rgba(84, 179, 229, 0.9);
@@ -183,20 +194,22 @@ body {
     margin-bottom: 1em; }
 .reveal dl.circle {
   position: absolute;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
   height: 825px; }
-  .reveal dl.circle dt {
-    margin-top: 2em; }
-  .reveal dl.circle.left {
-    left: 1em; }
-  .reveal dl.circle.right {
-    right: 1em; }
+.reveal dl dt {
+  margin-top: 3em;
+  padding-bottom: 1em; }
+.reveal dl dd {
+  padding-bottom: 1em;
+  padding-left: 10%;
+  padding-right: 10%; }
+.reveal dl.left {
+  left: 1em; }
+.reveal dl.right {
+  right: 1em; }
 .reveal .owner {
   position: absolute;
-  top: 900px;
+  top: 850px;
   width: 100%; }
 
 .bright body {

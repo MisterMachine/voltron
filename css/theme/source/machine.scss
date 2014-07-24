@@ -61,7 +61,17 @@ $selectionColor: #fff;
 
 	h2, h3, h4, h5, h6 {
 		font-weight: 300;
-	}	
+	}
+
+	ul {
+		margin-top: 2em;
+	}
+
+	li {
+		list-style: none;
+		font-size: 120%;
+		margin-bottom: 1em;
+	}
 
 	.sans {
 		font-family: $sansFont;
@@ -81,6 +91,7 @@ $selectionColor: #fff;
 
 	.bold {
 		font-weight: 700;
+		text-transform: uppercase;
 	}
 
 	.light {
@@ -115,6 +126,12 @@ $selectionColor: #fff;
 		position: relative;
 	}
 
+	.circle {
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
+
 	.details {
 		position: absolute;
 		background-color: rgba($backgroundColor, .9);
@@ -130,16 +147,23 @@ $selectionColor: #fff;
 		}
 	}
 
-	dl.circle {
-		position: absolute;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-		border-radius: 50%;
-		background-color: rgba(#fff, .2);
-		height: 825px;
+	dl {
+
+		&.circle {
+			position: absolute;
+			background-color: rgba(#fff, .2);
+			height: 825px;
+		}	
 
 		dt {
-			margin-top: 2em;
+			margin-top: 3em;
+			padding-bottom: 1em;
+		}
+
+		dd {
+			padding-bottom: 1em;
+			padding-left: 10%;
+			padding-right: 10%;
 		}
 
 		&.left {
@@ -153,7 +177,7 @@ $selectionColor: #fff;
 
 	.owner {
 		position: absolute;
-		top: 900px;
+		top: 850px;
 		width: 100%;
 	}
 }
