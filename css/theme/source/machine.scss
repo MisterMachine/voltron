@@ -135,14 +135,25 @@ $selectionColor: #fff;
 	.details {
 		position: absolute;
 		background-color: rgba($backgroundColor, .9);
-		top: 0;
+		bottom: 0;
 		right: -10px;
 		width: 33%;
 		padding: 2em;
-
 		list-style: none;
+		margin: 0;
+
+		&.left {
+			right: auto;
+			left: -10px;
+		}
+
+		&.top {
+			top: 0;
+			bottom: auto;
+		}
 
 		li {
+			font-size: 100%;
 			margin-bottom: 1em;
 		}
 	}
@@ -186,10 +197,18 @@ $selectionColor: #fff;
 	body {
 		background-color: $backgroundColor-bright;
 	}
+
+	.details {
+		background-color: rgba($backgroundColor-bright, .9);
+	}
 }
 
 .dark {
 	body {
 		background-color: $backgroundColor-dark;
+	}
+
+	.details {
+		background-color: rgba($backgroundColor-dark, .9);
 	}
 }

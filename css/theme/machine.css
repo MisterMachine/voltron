@@ -185,12 +185,20 @@ body {
 .reveal .details {
   position: absolute;
   background-color: rgba(84, 179, 229, 0.9);
-  top: 0;
+  bottom: 0;
   right: -10px;
   width: 33%;
   padding: 2em;
-  list-style: none; }
+  list-style: none;
+  margin: 0; }
+  .reveal .details.left {
+    right: auto;
+    left: -10px; }
+  .reveal .details.top {
+    top: 0;
+    bottom: auto; }
   .reveal .details li {
+    font-size: 100%;
     margin-bottom: 1em; }
 .reveal dl.circle {
   position: absolute;
@@ -214,6 +222,10 @@ body {
 
 .bright body {
   background-color: #e7a323; }
+.bright .details {
+  background-color: rgba(231, 163, 35, 0.9); }
 
 .dark body {
   background-color: #2c3a49; }
+.dark .details {
+  background-color: rgba(44, 58, 73, 0.9); }
