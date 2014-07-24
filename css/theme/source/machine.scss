@@ -46,6 +46,15 @@ $selectionColor: #fff;
 // ---------------------------------------------
 
 .reveal {
+
+	.slides {
+		text-align: left;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
 	h1 {
 		font-weight: 800;
 		text-transform: uppercase;
@@ -62,7 +71,8 @@ $selectionColor: #fff;
 	.serif {
 		font-family: $serifFont;
 		font-weight: 300;
-		text-transform: capitalize;
+		text-transform: none;
+		letter-spacing: -4px;
 	}
 
 	.heavy {
@@ -84,6 +94,44 @@ $selectionColor: #fff;
 
 	.rhythm-up {
 		margin-top: 2em;
+	}
+
+	.left {
+		float: left;
+		width: 50%;
+
+	}
+
+	.right {
+		float: right;
+		width: 50%;
+	}
+
+	dl.circle {
+		position: absolute;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		background-color: rgba(#fff, .2);
+		height: 825px;
+
+		dt {
+			margin-top: 2em;
+		}
+
+		&.left {
+			left: 1em;
+		}
+
+		&.right {
+			right: 1em;
+		}
+	}
+
+	.owner {
+		position: absolute;
+		top: 900px;
+		width: 100%;
 	}
 }
 

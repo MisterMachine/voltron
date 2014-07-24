@@ -133,6 +133,10 @@ body {
 .reveal .slide-number {
   color: #13daec; }
 
+.reveal .slides {
+  text-align: left; }
+.reveal .text-center {
+  text-align: center; }
 .reveal h1 {
   font-weight: 800;
   text-transform: uppercase; }
@@ -143,7 +147,8 @@ body {
 .reveal .serif {
   font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
   font-weight: 300;
-  text-transform: capitalize; }
+  text-transform: none;
+  letter-spacing: -4px; }
 .reveal .heavy {
   font-weight: 800;
   text-transform: uppercase; }
@@ -155,6 +160,29 @@ body {
   margin-bottom: 2em; }
 .reveal .rhythm-up {
   margin-top: 2em; }
+.reveal .left {
+  float: left;
+  width: 50%; }
+.reveal .right {
+  float: right;
+  width: 50%; }
+.reveal dl.circle {
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 825px; }
+  .reveal dl.circle dt {
+    margin-top: 2em; }
+  .reveal dl.circle.left {
+    left: 1em; }
+  .reveal dl.circle.right {
+    right: 1em; }
+.reveal .owner {
+  position: absolute;
+  top: 900px;
+  width: 100%; }
 
 .bright body {
   background-color: #e7a323; }

@@ -46,13 +46,13 @@
       <div class="slides">
 
         <section>
-          <section class="serif-slide">
-            <h2 class="serif">Mister Machine</h2>
+          <section class="text-center">
+            <h2 class="serif rhythm rhythm-up">Mister Machine</h2>
             <h1 class="serif">Design with Code</h1>
           </section>
 
-          <section>
-            <h2 class="serif">Jesse Arnold</h2>
+          <section class="text-center">
+            <h2 class="serif rhythm-up">Jesse Arnold</h2>
             <h3 class="fragment rhythm">Designer and Co-founder</h3>
             <h2 class="serif fragment">Michael Enslow</h3>
             <h3 class="sans fragment">Developer and Co-founder</h3>
@@ -81,12 +81,24 @@
           </section>
 
           <section data-state="dark">
-            <h2 class="heavy">Bridging the Gap</h2>
-            <ul>
-              <li>Design Teams</li>
-              <li>Development Teams</li>
-              <li class="fragment">Product Owner</li>
-            </ul>
+            <h2 class="heavy text-center">Bridging the Gap</h2>
+            <dl class="left text-center circle">
+              <dt>Design Teams</dt>
+              <dd></dd>
+              <dd></dd>
+            </dl>
+
+            <dl class="right text-center circle">
+              <dt>Development Teams</dt>
+              <dd></dd>
+              <dd></dd>
+            </dl>
+
+            <dl class="owner text-center">
+              <dt class="fragment">Product Owner</dt>
+              <dd></dd>
+              <dd></dd>
+            </dl>
           </section>
 
           <section>
@@ -439,7 +451,10 @@ function linkify( selector ) {
         controls: true,
         progress: true,
         history: true,
-        center: true,
+        center: false,
+
+        width: 1680,
+        height: 1260,
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
