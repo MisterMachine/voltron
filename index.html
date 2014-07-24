@@ -217,7 +217,7 @@
             <h1>Prototyping</h1>
             <h6>How does it move?</h6>
             <figure class="relative">
-              <img src="images/responsive-1.jpg">
+              <img src="images/prototype-1.png" class="trans">
                 <ul class="details fragment">
                 <li class="fragment">Responsiveness means nothing if static</li>
                 <li class="fragment">Allows you to respect surfaces and objects as they change size and relationship</li>
@@ -229,7 +229,7 @@
           <section data-state="dark">
             <h1>Prototyping</h1>
             <figure class="relative">
-              <img src="images/responsive-1.jpg">
+              <img src="images/prototype-2.png" class="trans">
                 <ul class="details fragment">
               <li class="fragment">Off Canvas areas produce interstitial events that affect the personality of your application</li>
               <li class="fragment">How something moves defines the character of the thing</li>
@@ -241,7 +241,7 @@
           <section>
             <h1>Prototyping</h1>
             <figure class="relative">
-              <img src="images/responsive-1.jpg">
+              <img src="images/prototype-1.png" class="trans" />
                 <ul class="details fragment">
               <li class="fragment">A single user story contained 36 unique wireframes with notation</li>
               <li class="fragment">A single prototype with a script can do the same job as four user stories</li>
@@ -255,31 +255,67 @@
             <figure class="relative">
               <img src="images/patterns-1.jpg">
                 <ul class="details fragment">
-              <li class="fragment">Off Canvas areas produce interstitial events that affect the personality of your application</li>
-              <li class="fragment">How something moves defines the character of the thing</li>
-              <li class="fragment">We find new scenarios when we purposely stumble through an app, or try to break it</li>
+              <li class="fragment">All Branded UI elements in one place</li>
+              <li class="fragment">A Style repository for developers to assemble complex layouts</li>
+              <li class="fragment">Allows the designer to work in partials and complement the development workflow</li>
             </ul>
             </figure>
           </section>
 
-          <section>
+          <section >
             <h1>Pattern Library</h1>
-            <figure class="relative">
-              <img src="images/patterns-2.jpg">
-                <ul class="details fragment">
-              <li class="fragment">A single user story contained 36 unique wireframes with notation</li>
-              <li class="fragment">A single prototype with a script can do the same job as four user stories</li>
-            </ul>
-            </figure>
+            <h6>Component thinking separates global rules from object rules</h6>
+            <p class="rhythm-up text-center">Start all of our frameworks with typography for vertical rules and grid for horizontals</p>
+            <div data-markdown>
+                <script type="text/template">
+                ```
+                /global
+                  
+                  /_all.scss - imports all of .scss files below
+                  /_typography.scss
+                  /_grid.scss
+                  /_helper.scss
+                  /_icons.scss
+                  /_forms.scss
+
+                 ```
+                 </script>
+              </div>
+
+              <p class="rhythm-up text-center">Modules are defined by their function within the application</p>
+              <div data-markdown>
+                <script type="text/template">
+                ```
+                /modules
+                  
+                  /_all.scss
+                  /_buttons.scss
+                  /_toolbar.scss
+                  /_progress.scss
+                  /_navigation.scss
+                  /_dialogs.scss
+                  /etc...
+
+                 ```
+                 </script>
+              </div>
           </section>
 
           <section>
             <h1>Pattern Library</h1>
+            <h6>Using Sass allows us to avoid name spacing without overly nesting our rules</h6>
+
+          </section>
+
+          <section>
+            <h1>Pattern Library</h1>
+            <h6>Static pages within the Library allow for mini-prototypes</h6>
             <figure class="relative">
-              <img src="images/patterns-2.jpg">
+              <img src="images/patterns-3.jpg">
                 <ul class="details fragment">
-              <li class="fragment">A single user story contained 36 unique wireframes with notation</li>
-              <li class="fragment">A single prototype with a script can do the same job as four user stories</li>
+              <li class="fragment">Timeline had radically unique views and at each breakpoint</li>
+              <li class="fragment">Base on ergonimics it runs vertically on mobile and horizontally on desktop</li>
+              <li class="fragment">As a discipline we build with a single component with a series of enhancements</li>
             </ul>
             </figure>
           </section>
@@ -307,6 +343,17 @@
               <li class="fragment">Allow team members without code experience to contribute to the product</li>
             </ul>
             </figure>
+          </section>
+
+          <section>
+            <h1>Results</h1>
+            <ul class="fragment">
+              <li class="fragment">Funding from more institutions based on demos</li>
+              <li class="fragment">Evangelized Sass best practices</li>
+              <li class="fragment">Helped train team to communicate with outside vendors </li>
+              <li class="fragment">Product was featured on TedTalks</li>
+              <li class="fragment">Empowered UX team to communicate with Developers</li>
+            </ul>
           </section>
 
         </section>

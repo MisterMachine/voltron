@@ -1,9 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
 /**
  * Default theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-
 
 // Default mixins and settings -----------------
 @import "../template/mixins";
@@ -119,11 +120,24 @@ $selectionColor: #fff;
 
 	img {
 		max-width: 100%;
-		max-height: none
+		max-height: none;
+
+		&.trans {
+			border: none;
+			background-color: transparent;
+			box-shadow: none;
+		}
 	}
 
 	.relative {
 		position: relative;
+	}
+
+	pre code {
+		font-family: 'Inconsolata', sans-serif;
+		font-size: 200%;
+		line-height: 100%;
+		padding: 1em;
 	}
 
 	.circle {

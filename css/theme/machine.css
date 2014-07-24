@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
 /**
  * Default theme for reveal.js.
  *
@@ -176,8 +177,17 @@ body {
 .reveal img {
   max-width: 100%;
   max-height: none; }
+  .reveal img.trans {
+    border: none;
+    background-color: transparent;
+    box-shadow: none; }
 .reveal .relative {
   position: relative; }
+.reveal pre code {
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 200%;
+  line-height: 100%;
+  padding: 1em; }
 .reveal .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
