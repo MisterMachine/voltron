@@ -46,7 +46,6 @@ $selectionColor: #fff;
 // ---------------------------------------------
 
 .reveal {
-
 	.slides {
 		text-align: left;
 	}
@@ -105,6 +104,30 @@ $selectionColor: #fff;
 	.right {
 		float: right;
 		width: 50%;
+	}
+
+	img {
+		max-width: 100%;
+		max-height: none
+	}
+
+	.relative {
+		position: relative;
+	}
+
+	.details {
+		position: absolute;
+		background-color: rgba($backgroundColor, .9);
+		top: 0;
+		right: -10px;
+		width: 33%;
+		padding: 2em;
+
+		list-style: none;
+
+		li {
+			margin-bottom: 1em;
+		}
 	}
 
 	dl.circle {
