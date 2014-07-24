@@ -265,8 +265,8 @@
           <section >
             <h1>Pattern Library</h1>
             <h6>Component thinking separates global rules from object rules</h6>
-            <p class="rhythm-up text-center">Start all of our frameworks with typography for vertical rules and grid for horizontals</p>
-            <div data-markdown>
+            
+            <div class="rhythm-up" data-markdown>
                 <script type="text/template">
                 ```
                 /global
@@ -281,9 +281,9 @@
                  ```
                  </script>
               </div>
+              <p class="serif text-center">Start all of our frameworks with typography for vertical rules and grid for horizontals</p>
 
-              <p class="rhythm-up text-center">Modules are defined by their function within the application</p>
-              <div data-markdown>
+              <div class="rhythm-up" data-markdown>
                 <script type="text/template">
                 ```
                 /modules
@@ -299,11 +299,31 @@
                  ```
                  </script>
               </div>
+              <p class="serif text-center">Modules are defined by their function within the application</p>
+
           </section>
 
           <section>
             <h1>Pattern Library</h1>
-            <h6>Using Sass allows us to avoid name spacing without overly nesting our rules</h6>
+            <h6>Using Sass allows us to avoid name spacing issues</h6>
+
+              <div class="rhythm-up" data-markdown>
+                <script type="text/template">
+                ```
+                /modules
+                  
+                  /_all.scss
+                  /_buttons.scss
+                  /_toolbar.scss
+                  /_progress.scss
+                  /_navigation.scss
+                  /_dialogs.scss
+                  /etc...
+
+                 ```
+                 </script>
+              </div>
+              <p class="serif text-center">Modules are defined by their function within the application</p>
 
           </section>
 

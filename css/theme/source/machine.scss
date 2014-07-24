@@ -78,11 +78,16 @@ $selectionColor: #fff;
 		font-family: $sansFont;
 	}
 
+	h1, h2, h3, h4, h5, h6 {
+		&.serif {
+			letter-spacing: -4px;
+		}
+	}
+
 	.serif {
 		font-family: $serifFont;
 		font-weight: 300;
 		text-transform: none;
-		letter-spacing: -4px;
 	}
 
 	.heavy {

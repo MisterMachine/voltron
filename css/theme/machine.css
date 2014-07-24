@@ -151,11 +151,12 @@ body {
   margin-bottom: 1em; }
 .reveal .sans {
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
+.reveal h1.serif, .reveal h2.serif, .reveal h3.serif, .reveal h4.serif, .reveal h5.serif, .reveal h6.serif {
+  letter-spacing: -4px; }
 .reveal .serif {
   font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
   font-weight: 300;
-  text-transform: none;
-  letter-spacing: -4px; }
+  text-transform: none; }
 .reveal .heavy {
   font-weight: 800;
   text-transform: uppercase; }
