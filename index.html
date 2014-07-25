@@ -305,25 +305,40 @@
 
           <section>
             <h1>Pattern Library</h1>
-            <h6>Using Sass allows us to avoid name spacing issues</h6>
+            <h6>Using Sass mixins allows us to keep markup cleaner</h6>
 
               <div class="rhythm-up" data-markdown>
                 <script type="text/template">
                 ```
-                /modules
-                  
-                  /_all.scss
-                  /_buttons.scss
-                  /_toolbar.scss
-                  /_progress.scss
-                  /_navigation.scss
-                  /_dialogs.scss
-                  /etc...
+                  .classroom {
+                    .media {
+                      @include grid-column(8);
+                    }
+                    .article {
+                      @include grid-column(8);
+                    }
+                  }
 
                  ```
                  </script>
               </div>
-              <p class="serif text-center">Modules are defined by their function within the application</p>
+              <p class="serif text-center">Grid sizing is defined in a view file</p>
+
+               <div class="rhythm-up" data-markdown>
+                <script type="text/template">
+                ```
+                <section class="classroom">
+                  <aside class="media">
+                    <video >
+                  </aside>
+                  <article class="transcript">
+                    <p> Transcript object </p>
+                  </article>
+                </section>
+                 ```
+                 </script>
+              </div>
+              <p class="serif text-center">Based on Foundation and Semantic Grid</p>
 
           </section>
 
