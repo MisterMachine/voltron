@@ -170,11 +170,11 @@ body {
 .reveal .rhythm-up {
   margin-top: 2em; }
 .reveal .left {
-  float: left;
-  width: 50%; }
+  float: left; }
 .reveal .right {
-  float: right;
-  width: 50%; }
+  float: right; }
+.reveal .overflow {
+  overflow: hidden; }
 .reveal img {
   max-width: 100%;
   max-height: none; }
@@ -189,10 +189,13 @@ body {
   font-size: 200%;
   line-height: 100%;
   padding: 1em; }
+.reveal .tall pre code {
+  min-height: 680px; }
 .reveal .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  width: 50%; }
 .reveal .details {
   position: absolute;
   background-color: rgba(84, 179, 229, 0.9);

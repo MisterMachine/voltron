@@ -114,13 +114,14 @@ $selectionColor: #fff;
 
 	.left {
 		float: left;
-		width: 50%;
-
 	}
 
 	.right {
 		float: right;
-		width: 50%;
+	}
+
+	.overflow {
+		overflow: hidden;
 	}
 
 	img {
@@ -145,10 +146,17 @@ $selectionColor: #fff;
 		padding: 1em;
 	}
 
+	.tall {
+		pre code {
+			min-height: 680px;
+		}
+	}
+
 	.circle {
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
 		border-radius: 50%;
+		width: 50%;
 	}
 
 	.details {
