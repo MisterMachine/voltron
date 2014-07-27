@@ -1,0 +1,9 @@
+require 'railsless-deploy'
+
+# Multistage - each stage needs its own stage-name.rb file in the config/deploy directory
+set :stages, ['production', 'dev']
+set :default_stage, 'dev'
+require 'capistrano/ext/multistage'
+
+load 'lib/tasks'
+load 'config/deploy'
