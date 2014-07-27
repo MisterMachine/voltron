@@ -175,6 +175,8 @@ body {
   float: right; }
 .reveal .overflow {
   overflow: hidden; }
+.reveal .jumbo {
+  font-size: 7em; }
 .reveal img {
   max-width: 100%;
   max-height: none; }
