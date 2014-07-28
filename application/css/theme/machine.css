@@ -148,7 +148,9 @@ body {
 .reveal li {
   list-style: none;
   font-size: 120%;
-  margin-bottom: 1em; }
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  font-weight: 300; }
 .reveal .sans {
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif; }
 .reveal h1.serif, .reveal h2.serif, .reveal h3.serif, .reveal h4.serif, .reveal h5.serif, .reveal h6.serif {
