@@ -616,19 +616,19 @@
 
           <section data-state="bright">
             <h1>Process</h1>
-            <h6>Custom Framework</h6>
+            <h6>Pattern Library</h6>
              <figure class="relative">
               <img src="images/z-patterns.jpg">
                 <ul class="details fragment">
-                  <li class="fragment">We assembled our own component system</li>
-                  <li class="fragment">Define the app’s material based on the specific needs of the application</li>
+                  <li class="fragment">We assembled the component system</li>
+                  <li class="fragment">Provide guidance for application integraion</li>
                 </ul>
             </figure>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Here's a shot of the pattern library</li>
+                <li>Notice the navigation elements and the notifications</li>
+                <li>On the right-hand side, you can see how we provided tools for helping the development team integrate the patterns</li>
               </ul>
             </aside>
           </section>
@@ -640,61 +640,14 @@
               <img src="images/z-responsive-1.jpg">
                 <ul class="details fragment">
                   <li class="fragment">Built each component independently for resposiveness</li>
-                  <li class="fragment">Respected each device's ergonomics and navigation conventions</li>
+                  <li class="fragment">Respected device ergonomics and navigation conventions</li>
                 </ul>
             </figure>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Here's another shot where we're isolating the off-canvas navigation to test responsiveness</li>
               </ul>
             </aside>
-          </section>
-
-          <section data-state="">
-            <h1>Iterations</h1>
-            <aside>
-              <p>Test and Repeat</p>
-            </aside>
-            <div class="rhythm-up" data-markdown>
-                <script type="text/template">
-                ``` 
-                  require(["helper/util"], function(util) {
-                      //This function is called when scripts/helper/util.js is loaded.
-                      //If util.js calls define(), then this function is not fired until
-                      //util's dependencies have loaded, and the util argument will hold
-                      //the module value for "helper/util".
-                  });
-                 ```
-                 </script>
-              </div>
-              <p class="serif text-center">Use of Require JS for Ember MVC abstraction</p>
-
-               <div class="rhythm-up" data-markdown>
-                <script type="text/template">
-                ```
-                  <ul>
-                    {{#people}}
-                      <li>{{name}}</li>
-                    {{/people}}
-                  </ul>
-                 ```
-                 </script>
-              </div>
-              <p class="serif text-center">Handlebar Templates</p>
-          </section>
-
-          <section data-state="">
-            <h1>Iterations</h1>
-             <figure class="relative">
-              <img src="images/z-flow2.jpg">
-              <ul class="details fragment">
-                <li class="fragment">Capistrano (Ruby Gem) for rapid and secure deployment from specified Git branch</li>
-                <li class="fragment">Checked in code daily which was tested by a user group the following </li>
-                <li class="fragment">Art: guides.github.com/introduction/flow</li>
-                </ul>
-            </figure>
           </section>
 
           <section data-state="dark">
@@ -708,6 +661,13 @@
                 <li class="fragment">D3 allowed developers to create element hooks that would produce dynamic graphing</li>
               </ul>
             </figure>
+            <aside class="notes">
+              <ul>
+                <li>Here are a couple screen shots of the D3 graphs that were part of the Teacher Dashboard</li>
+                <li>First, we wanted to establish the domain language for the D3 graphs</li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
 
           <section>
@@ -721,6 +681,106 @@
                   </li>
               </ul>
             </figure>
+            <aside class="notes">
+              <ul>
+                <li>Here's what our building blocks look like once we take apart the complex graph</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
+          </section>
+
+          <section data-state="">
+            <h1>Iterations</h1>
+            <aside>
+              <p>Connect the Dots</p>
+            </aside>
+          <pre><code data-trim contenteditable>
+//Create SVG element
+var svg = d3.select(".scatterplot")
+  .append("svg")
+  .attr("width", w)
+  .attr("height", h);
+
+// Set default background fill for SVG
+svg.append("rect")
+  .attr("width", w)
+  .attr("height", h)
+  .attr("fill", "#f9f9f9");
+
+// Add the data
+svg.selectAll("circle")
+  .data(dataset)
+  .enter()
+  .append("circle") 
+  .attr("cx", function(d) { return d[1]; })  // circle x coordinate (0 index of dataset array)
+  .attr("cy", function(d) { return d[2]; })  // circle y coordinate (1 index of dataset array)
+  .attr("r", 20) // radius of circle
+  .attr("fill", "#fff")
+          </code></pre>
+            <aside class="notes">
+              <ul>
+                <li>Start with the very simple scatterplot canvas</li>
+                <li>Fill in the background color</li>
+                <li>Add some data</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section data-state="">
+            <h1>Iterations</h1>
+            <aside>
+              <p>Adding Complexity</p>
+            </aside>
+          <pre><code data-trim contenteditable>
+// Create our circle elements
+svg.selectAll("circle")
+  .data(dataset)
+  .enter()
+  .append("circle")
+  .attr("cx", function (d) { return d[1]; })
+  .attr("cy", function (d) { return d[2]; })
+  .attr("r", 20)
+  .attr("fill", "#fff")
+  .attr("stroke", "#73bdc8")
+  .attr("stroke-width", 2)
+
+// Create svg element and append them avatars
+svg.selectAll("image")
+  .data(dataset)
+  .enter()
+  .append("image")
+  .attr("xlink:href", "/assets/img/avatar-boy.png")
+  .attr("width", 40) 
+  .attr("height", 40)
+  .attr("transform", function(d) { return "translate(" + ( d[1]-20 )+","+ ( d[2]-20 ) +")"; });
+          </code></pre>
+            <aside class="notes">
+              <ul>
+                <li>Start with the very simple scatterplot canvas</li>
+                <li>Fill in the background color</li>
+                <li>Add some data</li>
+              </ul>
+            </aside>
+          </section>
+
+          <section data-state="">
+            <h1>Iterations</h1>
+            <aside>
+              <p>Rapid Code Deployment</p>
+            </aside>
+            <ul class="details fragment">
+              <li class="fragment">Capistrano (Ruby Gem) for rapid and secure deployment from specified Git branch</li>
+              <li class="fragment">Checked in code daily which was tested by a user group the following </li>
+              <li class="fragment">Art: guides.github.com/introduction/flow</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Finally, one of the best ways we streamline our development is the ability to rapidly and securly push code to a web server that our clients can view and test with</li>
+                <li>With our Middleman Pattern Libraries we use Middleman-deploy with rsync</li>
+                <li>With our CMS projects we use Capistrano which is a Ruby Gem that deploys from a selected (usually master) branch of your git repository</li>
+              </ul>
+            </aside>
           </section>
 
           <section>
@@ -733,6 +793,13 @@
               <li class="fragment">Helped to instruct the development team on basic D3 building blocks</li>
               <li class="fragment">Onboarding of multiple developers onto the project</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
 
         </section>
