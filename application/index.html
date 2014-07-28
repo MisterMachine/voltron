@@ -209,7 +209,7 @@
             </aside>
           </section>
 
-          <section>
+<!--  Not sure we still need this. Slows the pace  <section>
             <h1 class="heavy">Core Offerings</h1>
             <ul>
               <li class="fragment">Visual and User Experience Design</li>
@@ -224,7 +224,7 @@
                 <li></li>
               </ul>
             </aside>
-          </section>
+          </section> -->
         </section>
 
         <!--
@@ -238,11 +238,11 @@
           </section>
 
            <section data-state="dark">
-            <h1 class="serif">NYU Explores Distance Learning</h1>
+            <h1 class="serif">Ngaged Explores Distance Learning</h1>
             <ul>
-              <li class="fragment"><strong>Students</strong> need access to course material outside the classroom. Students should be able to leverage work of other students and engage with the professor more directly.</li>
-              <li class="fragment"><strong>Teachers</strong> need tools to annotate course material and to evaluate student engagement.</li>
               <li class="fragment">The <strong>Institution</strong> needs their archive of course material to be searchable and indexable and increase enrollment numbers.</li>
+              <li class="fragment"><strong>Students</strong> need access to course material outside the classroom, leverage the work of others and engage with the professor more directly.</li>
+              <li class="fragment"><strong>Teachers</strong> need tools to annotate course material and to evaluate student engagement.</li>
             </ul>
             <aside class="notes">
               <ul>
@@ -262,55 +262,59 @@
               <li>Lack of experienced front end resources</li>
             </ul>
             <div class="fragment">
-            <h2 class="serif rhythm-up">Integration with Sakai learning management system</h2>
+            <h2 class="serif rhythm-up">Integrate with Sakai learning management system</h2>
             <ul>
               <li>Sakai provides a flexible systems for teaching, learning, research and collaboration</li>
-              <li>Sakai lacks rich classroom interactions for student engagement</li>
+              <li>Lacks rich classroom interactions for student engagement</li>
+              <li>Adapt Ngaged product to provide valuable video, slides and transcripts</li>
             </ul>
             </div>
             <aside class="notes">
               <ul>
-                <li>Integrates with Sakai learning management system</li>
-                <li></li>
-                <li></li>
+                <li>NYU had chosen Sakai</li>
+                <li>We would have to sandbox our media and interatcions for security reasons</li>
+                <li>Still needed to extract "output" from the application</li>
               </ul>
             </aside>
           </section>
 
            <section>
-            <h2 class="serif">NYU Integration with Sakai</h1>
+            <h2 class="serif">NYU Integration of Sakai & Ngaged</h1>
               <figure class="relative">
               <img src="images/sakai-1.png">
             </figure>
             <aside class="notes">
               <ul>
                 <li>Here's what the Sakai integration looks like</li>
-                <li>We were dealing with the Blended Learning View of the system</li>
-                <li></li>
+                <li>We're dealing with the Blended Learning View of the system</li>
+                <li>You can see student entry points and UGC content "outputs"</li>
               </ul>
             </aside>
           </section>
 
           <section data-state="dark">
-            <h2 class="serif">Phase 1: Pattern Library</h1>
+            <h2 class="serif">Phase 1: Prototype</h2>
             <ul>
+              <li>Revise user experience based on usability review</li>
               <li>Develop component kit for the UI</li>
+              <li>Give UX designers tools for communicating with developers</li>
+            </ul>
+            <div class="fragment rhythm-up">
+               <h2 class="serif">Phase 2: Pattern Library</h1>
+            <ul>
               <li>Define responsive modules with pattern library and Sass</li>
               <li>Give developers tools that could be used in future iterations</li>
-            </ul>
-            <div class="fragment">
-            <h2 class="serif rhythm-up">Phase 2: Prototype</h2>
-            <ul>
-              <li>Revise user experience based on updated feature set</li>
-              <li>Adapt key user interactions for native mobile client</li>
-              <li>Give UX designers tools for communicating with developers</li>
+              <li>Detail optional elements of the UI through Visual Mockups</li>
             </ul>
             </div>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>There was a product. It was built by devs for devs. We had to rethink it for end users.</li>
+                <li>Every action seemed independent of each other. We wanted to provide structure and story to these actions.</li>
+                <li>Our time was limited so we wanted to provide in house designers with tools they could use to talk to devs.</li>
+
+                <li>We wanted to codify the modules within the application so developers had the building blocks for future features and strories.</li>
+                <li>We also wanted to skip ahead a bit and provide a gallery for concepts and future releases through visual collage.</li>
               </ul>
             </aside>
           </section>
@@ -326,7 +330,7 @@
               <ul>
                 <li>Because so many students are using mobile devices in the classroom</li>
                 <li>Found there would be the most gains with the student use case</li>
-                <li></li>
+                <li>If we produce student adoption we could generate the most momentum across the other user types</li>
               </ul>
             </aside>
           </section>
@@ -348,7 +352,7 @@
                 <li>Usability testing revealed that there was no default size or orientation</li>
                 <li>Created families of interations</li>
                 <li>Determined which interactions were primary</li>
-                <li>Primary interaction would trigger chain of smaller interactions</li>
+                <li>Primary interactions were thos that would trigger a chain of smaller interactions</li>
               </ul>
             </aside>
           </section>
@@ -367,8 +371,8 @@
             <aside class="notes">
               <ul>
                 <li>Here is an example of the primary bookmarking interaction</li>
+                <li>It is persistent throughout the most wires and user stories</li>
                 <li>(*** Bullets are a little off from the wireframes ****)</li>
-                <li></li>
               </ul>
             </aside>
           </section>
@@ -385,9 +389,9 @@
             </figure>
             <aside class="notes">
               <ul>
-                <li>Here we see how complex it is to create wireframes that illustrate a single user story</li>
+                <li>Here we see how complex it is to create wireframes that illustrate a single user story & do that responsively</li>
                 <li>We reached the conclution that this would be much clearer to developers if we provide a prototype</li>
-                <li></li>
+                <li>Part of our job was also to help UX designers talk to Developers and this would be that tool</li>
               </ul>
             </aside>
           </section>
@@ -399,15 +403,15 @@
               <img src="images/prototype-1.png" class="trans">
               <ul class="details fragment top left">
                 <li>Responsiveness means nothing is static</li>
-                <li>How something moves defines the character of the thing</li>
-                <li>Off Canvas areas produce interstitial events that affect the personality of your application</li>
+                <li>Collapsable containers benefit from flexible grids</li>
+                <li>Transitions and animations then became part of the UI language</li>
               </ul>
             </figure>
             <aside class="notes">
               <ul>
                 <li>Rather than trying to describe responsive interactions, we built them</li>
-                <li>Building the protype allowed discover and tune interactions that we would not have seen otherwise</li>
-                <li></li>
+                <li>Building the protype allowed us to discover and tune interactions that we would not have seen otherwise</li>
+                <li>Flexible grids also helps us define animations and transitions</li>
               </ul>
             </aside>
           </section>
@@ -417,16 +421,17 @@
             <figure class="relative">
               <img src="images/prototype-2.png" class="trans">
               <ul class="details fragment left">
-                <li>Allows you to respect surfaces and objects as they change size and relationship</li>
-                <li>Means same canvas elements may house several events depending on sequence</li>
-                <li>Provides new scenarios when we purposely stumble through an app, or try to break it</li>
-            </ul>
+                <li>Off canvas events contained many interactions.</li>
+                <li>Each device UI also produced variations that needed to be allowed for.</li>
+                <li>Prototyping allowed us to say "Ah hah! see what I mean"</li>
+              </ul>
             </figure>
+            
             <aside class="notes">
               <ul>
-                <li>(*** these bullets are confusing... ***)</li>
-                <li>( Conclusion of the prototype section? )</li>
-                <li></li>
+                <li>Most features were contained in off canvas events.</li>
+                <li>When switching between events we needed to string together multiple user stories</li>
+                <li>A prototype is a great test of flexiblity and interstitial events</li>
               </ul>
             </aside>
           </section>
@@ -444,9 +449,9 @@
             </figure>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>A living style guide but a whole lot more.</li>
+                <li>Yes developers can copy and paste styles into templates</li>
+                <li>But, these styles also now evolve over time. The dicipline of Patterning also helps the designing work in modular components which compliments how developers think.</li>
               </ul>
             </aside>
           </section>
@@ -493,8 +498,8 @@
             <aside class="notes">
               <ul>
                 <li>By breaking our sass files into components that both designers and developers understand, we create a communication bridge between theme</li>
-                <li></li>
-                <li></li>
+                <li>Global, Modules and Pages describes our three tiered structure.</li>
+                <li>Global defines Brand rules. Modules define objects and functions within the application and we reserve sizing and positioning for Page files. </li>
               </ul>
             </aside>
           </section>
@@ -538,9 +543,9 @@
 
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>We want our markup components to be as universal as possible. In order to do this we needed to lose grid classes.</li>
+                <li>We use Sass to define Page templates independent of our Module and Brand definitions.</li>
+                <li>This is only possible with Responsive Design and Sass </li>
               </ul>
             </aside>
           </section>
