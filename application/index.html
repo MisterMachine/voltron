@@ -202,6 +202,11 @@
             </ul>
             <aside class="notes">
               <ul>
+                <li>Prepared to integrate the front end framework into the app framework</li>
+                <li>Provides hooks to compile the assets to complement other systems</li>
+                <li>Pattern library is not static</li>
+                <li>Pattern library prepares assets for production app</li>
+                <li></li>
               </ul>
             </aside>
           </section>
@@ -369,7 +374,8 @@
               <ul>
                 <li>Here is an example of the primary bookmarking interaction</li>
                 <li>It is persistent throughout the most wires and user stories</li>
-                <li>(*** Bullets are a little off from the wireframes ****)</li>
+                <li>Bookmarking is the entrypoint here that marks time</li>
+                <li>All secondary span from this primary bookmarking interaction</li>
               </ul>
             </aside>
           </section>
@@ -682,9 +688,6 @@
            <section data-state="dark">
               <h1 class="serif">Zeal is a Social Learning Platform</h1>
               <ul>
-<!--                 <li class="fragment">Provides a flexible system for teaching, learning, research and collaboration.</li>
-                <li class="fragment">Branding guidelines and user experience were handled by Design Map. Decisions such as brand persona, color palette, and typography were well established.</li>
-                <li class="fragment">Before moving into native application development, the decision was made to build the prototype in HTML5 in order to move rapidly and test assumptions.</li> -->
                 <li>Founded by John Danner & Sanjay Noronha</li>
                 <li>Analytics assist teachers in catering to high and low achieving students in each subject</li>
                 <li>Students are paired with other students with complementary skill sets</li>
@@ -692,6 +695,7 @@
               </ul>
               <aside class="notes">
                 <ul>
+                  <li>Founded by John Danner & Sanjay Noronha</li>
                   <li>John is the founder of NetGravity, a very early AdServing Company</li>
                   <li>Sanjay is the co-founder of Elance, an outsourcing marketplace</li>
                   <li>Zeal provides a D3 dashboard for Teachers to see how students are performing</li>
@@ -814,11 +818,11 @@
                 <small>Source: http://guides.github.com/introduction/flow</small>
               </figcaption>
               <ul class="details fragment">
-                  <li class="fragment">Master branch is for production code</li>
-                  <li class="fragment">Branch for new development effort</li>
-                  <li class="fragment">Commits</li>
-                  <li class="fragment">Submit "pull request"</li>
-                  <li class="fragment">Merge when ready</li>
+                  <li>Master branch is for production code</li>
+                  <li>Branch for new development effort</li>
+                  <li>Commits</li>
+                  <li>Submit "pull request"</li>
+                  <li>Merge when ready</li>
                 </ul>
             </figure>
             <aside class="notes">
@@ -839,8 +843,8 @@
              <figure class="relative">
               <img src="images/z-patterns.jpg">
                 <ul class="details fragment">
-                  <li class="fragment">We assembled the component system</li>
-                  <li class="fragment">Provide guidance for application integraion</li>
+                  <li>We assembled the component system</li>
+                  <li>Provide guidance for application integraion</li>
                 </ul>
             </figure>
             <aside class="notes">
@@ -858,8 +862,8 @@
              <figure class="relative">
               <img src="images/z-responsive-1.jpg">
                 <ul class="details fragment">
-                  <li class="fragment">Built each component independently for resposiveness</li>
-                  <li class="fragment">Respected device ergonomics and navigation conventions</li>
+                  <li>Built each component independently for resposiveness</li>
+                  <li>Respected device ergonomics and navigation conventions</li>
                 </ul>
             </figure>
             <aside class="notes">
@@ -875,9 +879,9 @@
             <figure class="relative">
               <img src="images/zeal-d3.jpg">
               <ul class="details fragment">
-                <li class="fragment">Domain language was established in order to ensure reuse of patterns</li>
-                <li class="fragment">SVG allowed designers to maintain art direction over individual components</li>
-                <li class="fragment">D3 allowed developers to create element hooks that would produce dynamic graphing</li>
+                <li>Domain language was established in order to ensure reuse of patterns</li>
+                <li>SVG allowed designers to maintain art direction over individual components</li>
+                <li>D3 allowed developers to create element hooks that would produce dynamic graphing</li>
               </ul>
             </figure>
             <aside class="notes">
@@ -895,7 +899,7 @@
             <aside>
               <p>Connect the Dots</p>
             </aside>
-          <pre><code data-trim contenteditable>
+          <div class="tall"><pre><code data-trim contenteditable>
 //Create SVG element
 var svg = d3.select(".scatterplot")
   .append("svg")
@@ -917,7 +921,7 @@ svg.selectAll("circle")
   .attr("cy", function(d) { return d[2]; })  // circle y coordinate (1 index of dataset array)
   .attr("r", 20) // radius of circle
   .attr("fill", "#fff")
-          </code></pre>
+          </code></pre></div>
             <aside class="notes">
               <ul>
                 <li>So, how did we teach the developers how to use these?</li>
@@ -971,9 +975,8 @@ svg.selectAll("image")
             <figure class="relative">
               <img src="images/zeal-d3-2.jpg">
               <ul class="details fragment">
-                  <li class="fragment">Created D3 Graph Libraries including.</li>
-                  <li class="fragment">Simple Scatterplot, Labels, Integrating Avatars, Customizable backgrounds, Margins and graphlines, Axis (with and without label, Basic Lines, Shapes integration
-                  </li>
+                <li>Created D3 Graph Libraries including.</li>
+                <li>Simple Scatterplot, Labels, Integrating Avatars, Customizable backgrounds, Margins and graphlines, Axis (with and without label, Basic Lines, Shapes integration</li>
               </ul>
             </figure>
             <aside class="notes">
@@ -1007,18 +1010,19 @@ svg.selectAll("image")
           <section>
             <h1>Results</h1>
             <ul>
-              <li class="fragment">Originally hired for two months and then stayed on for an additional 4 months to continue adding resolution to our framework and support. </li>
-              <li class="fragment">Prototype helped increase the number of students in the user testing pool.</li>
-              <li class="fragment">Helped train team to communicate with outside vendors.</li>
-              <li class="fragment">Delivered new features on a weekly basis to the testing team.</li>
-              <li class="fragment">Helped to instruct the development team on D3 building blocks.</li>
-              <li class="fragment">Onboarding of multiple developers onto the project.</li>
+              <li class="fragment">Hired for 2 months, extended contract for 4 more</li>
+              <li class="fragment">Increased number of students in pilot</li>
+              <li class="fragment">Alpha Teacher Dashboard Launched</li>
+              <li class="fragment">Helped to instruct the development team on D3 building blocks</li>
+              <li class="fragment">Improved onboarding of new resources</li>
             </ul>
             <aside class="notes">
               <ul>
-                <li>In closing, here are some other responsive projects we've worked on</li>
-                <li></li>
-                <li></li>
+                <li>Originally hired for two months, extended for an additinal 4 to continue adding resolution to our framework and support.</li>
+                <li>Prototype helped increase the number of students in the user testing pool.</li>
+                <li>Delivered new features on a weekly basis to the testing team - v1 of teacher dashboard</li>
+                <li>Onboarding developers to D3 JavaScript library</li>
+                <li>Helped train team to communicate on onboard with outside vendors and new resources</li>
               </ul>
             </aside>
           </section>
