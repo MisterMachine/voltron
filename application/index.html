@@ -889,8 +889,8 @@
               <ul>
                 <li>Here's a shot of the pattern library</li>
                 <li>[FIRE]</li>
-                <li>Notice the navigation elements and the notifications</li>
-                <li>On the right-hand side, you can see how we provided tools for helping the development team integrate the patterns</li>
+                <li>This would serve again as code reference and single page prototype framework</li>
+                <li>On the right-hand side, you can see how we provided tools for helping the development team integrate the patterns into markup</li>
               </ul>
             </aside>
           </section>
@@ -907,8 +907,10 @@
             </figure>
             <aside class="notes">
               <ul>
-                <li>Here's another shot where we're isolating the off-canvas navigation to test responsiveness</li>
+                <li>Layout again was independent of the individual components allowing us to use media queries to effect layout. </li>
                 <li>[FIRE]</li>
+                <li>Here's another shot where we're isolating the off-canvas navigation to test responsiveness</li>
+                <li>Our priotrity was to respect device ergonomics and navigation conventions</li>
               </ul>
             </aside>
           </section>
@@ -978,7 +980,7 @@ svg.selectAll("circle")
             <aside>
               <p>Adding Complexity</p>
             </aside>
-          <pre><code data-trim contenteditable>
+          <div class="tall"><pre><code data-trim contenteditable>
 // Create our circle elements
 svg.selectAll("circle")
   .data(dataset)
@@ -1001,6 +1003,7 @@ svg.selectAll("image")
   .attr("height", 40)
   .attr("transform", function(d) { return "translate(" + ( d[1]-20 )+","+ ( d[2]-20 ) +")"; });
           </code></pre>
+          </div>
             <aside class="notes">
               <ul>
                 <li>Start with the very simple scatterplot canvas</li>
@@ -1140,7 +1143,7 @@ svg.selectAll("image")
 
             <aside class="notes">
               <ul>
-                <li>Devlop robust visual languages that are independent of grids and layout so that developers can build as they go.</li>
+                <li>Developed a robust visual languages that was independent of layout so that developers can build as they go.</li>
               </ul>
             </aside>
           </section>
