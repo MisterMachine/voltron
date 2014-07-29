@@ -133,6 +133,7 @@
                 <li>Small budgets, tight timelines</li>
                 <li>Allowing for blue sky</li>
                 <li>Not saying No all the time</li>
+                <li>[FIRE]</li>
                 <li>Forward: Keep the project moving forward</li>
                 <li>Listen to client's needs</li>
                 <li>Cycle of pair programmed sprints</li>
@@ -163,10 +164,16 @@
             <aside class="notes">
               <ul>
                 <li>Pair Design & Developing lead to briding the gap</li>
-                <li>Designers: Don't like templates</li>
-                <li>Designers: Don't like getting in the code - prevents understanding of the material</li>
+                <li>Designers Don't like templates</li>
+                <li>Designers Don't like getting in the code - prevents understanding of the material</li>
+                <li>Material authenticity</li>
+                <li>[FIRE]</li>
                 <li>Developer: Won't move until given an actionable task</li>
                 <li>Treat display as a second class citizen</li>
+                <li>Generally don't understand CSS Layout</li>
+                <li>[FIRE]</li>
+                <li>Product Owner things that designers and developers know how to work together</li>
+                <li>Neglected</li>
               </ul>
             </aside>
           </section>
@@ -184,6 +191,7 @@
               <ul>
                 <li>We found the tool that brings these together to be the pattern library</li>
                 <li>Base our pattern library on Brad Frost's priciple of atomic design</li>
+                <li>[FIRE]</li>
                 <li>Atoms, Molecules, Organisms - no more pages</li>
                 <li>Middleman: Allows designers to build in components - DRY code</li>
                 <li>Middleman: compibles to production ready code</li>
@@ -194,39 +202,23 @@
 
           <section data-state="bright">
             <h6>Workflow that Works</h6>
-            <h1 class="heavy">App Framework</h1>
+            <h1 class="heavy">App Framework Integration</h1>
             <ul class="fragment">
               <li>Consume compiled CSS into <strong>Asset Pipeline</strong></li>
               <li>Final production optimization happens in framework with <strong>Grunt</strong> and Middleman's asset pipeline</li>
-              <li><strong>Capistrano</strong> deployment of production application</li>
+              <li><strong>Middleman or Capistrano</strong> deployment of production application</li>
             </ul>
             <aside class="notes">
               <ul>
                 <li>Prepared to integrate the front end framework into the app framework</li>
+                <li>[FIRE]</li>
                 <li>Provides hooks to compile the assets to complement other systems</li>
                 <li>Pattern library is not static</li>
                 <li>Pattern library prepares assets for production app</li>
-                <li></li>
               </ul>
             </aside>
           </section>
 
-<!--  Not sure we still need this. Slows the pace  <section>
-            <h1 class="heavy">Core Offerings</h1>
-            <ul>
-              <li class="fragment">Visual and User Experience Design</li>
-              <li class="fragment">Tech Discovery and Feasibility</li>
-              <li class="fragment">Responsive, Front end Pattern Libraries</li>
-              <li class="fragment">CMS Development</li>
-            </ul>
-            <aside class="notes">
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </aside>
-          </section> -->
         </section>
 
         <!--
@@ -687,7 +679,7 @@
 
            <section data-state="dark">
               <h1 class="serif">Zeal is a Social Learning Platform</h1>
-              <ul>
+              <ul class="fragment">
                 <li>Founded by John Danner & Sanjay Noronha</li>
                 <li>Analytics assist teachers in catering to high and low achieving students in each subject</li>
                 <li>Students are paired with other students with complementary skill sets</li>
@@ -695,6 +687,8 @@
               </ul>
               <aside class="notes">
                 <ul>
+                  <li>Social Learning for kids k through 12</li>
+                  <li>[FIRE]</li>
                   <li>Founded by John Danner & Sanjay Noronha</li>
                   <li>John is the founder of NetGravity, a very early AdServing Company</li>
                   <li>Sanjay is the co-founder of Elance, an outsourcing marketplace</li>
@@ -719,10 +713,8 @@
               <ul>
                 <li>Rapid Change Over of Resources</li>
                 <li>Responsive Front End built with Sass and Compass, and D3</li>
-                <li>Single page Ember.js App</li>
-                <li>Ruby on Rails Back End</li>
-                <li>Iterative Agile Process</li>
-                <li>Usability testing by pilot program participants</li>
+                <li>Single page Ember.js App with Ruby on Rails Back End</li>
+                <li>Iterative Agile Development with Usability Testing</li>
               </ul>
             </div>
             <aside class="notes">
@@ -735,6 +727,7 @@
                     <li>Designs included rich interactions such as off-canvas events, responsive css, and complex graphs for data visualization</li>
                   </ul>
                 </li>
+                <li>[FIRE]</li>
                 <li>Development
                   <ul>
                     <li>Instability with resources - not a lot of good coding standards</li>
@@ -770,7 +763,7 @@
               <ul>
                 <li>Student App & Pattern library
                   <ul>
-                    <li>Analized the visual language of the design in order to create an inventory of front end components</li>
+                    <li>Analyzed the visual language of the design in order to create an inventory of front end components</li>
                     <li>Began to build the pattern library
                     <li>Highest priority items first</li>
                     <li>No expertise for migrating front end patterns into framework
@@ -779,6 +772,7 @@
                     <li>Integration of Pattern Library into the Rails Asset Pipeline using custom framework outputs for fonts, images, etc</li>
                   </ul>
                 </li>
+                <li>[FIRE]</li>
                 <li>Teacher Dashboard with Data Visualizatin
                   <ul>
                     <li>Building front end of Teacher Analytics Dashbaord</li>
@@ -818,16 +812,17 @@
                 <small>Source: http://guides.github.com/introduction/flow</small>
               </figcaption>
               <ul class="details fragment">
-                  <li>Master branch is for production code</li>
-                  <li>Branch for new development effort</li>
-                  <li>Commits</li>
-                  <li>Submit "pull request"</li>
-                  <li>Merge when ready</li>
-                </ul>
+                <li>Master branch is for production code</li>
+                <li>Branch for new development effort</li>
+                <li>Commits</li>
+                <li>Submit "pull request"</li>
+                <li>Merge when ready</li>
+              </ul>
             </figure>
             <aside class="notes">
               <ul>
                 <li>Master Branch is your production branch</li>
+                <li>[FIRE]</li>
                 <li>When ready to do new development, you make a branch</li>
                 <li>Commit, commit, commit</li>
                 <li>When code is ready for someone to review, submit a pull request</li>
@@ -850,6 +845,7 @@
             <aside class="notes">
               <ul>
                 <li>Here's a shot of the pattern library</li>
+                <li>[FIRE]</li>
                 <li>Notice the navigation elements and the notifications</li>
                 <li>On the right-hand side, you can see how we provided tools for helping the development team integrate the patterns</li>
               </ul>
@@ -869,6 +865,7 @@
             <aside class="notes">
               <ul>
                 <li>Here's another shot where we're isolating the off-canvas navigation to test responsiveness</li>
+                <li>[FIRE]</li>
               </ul>
             </aside>
           </section>
@@ -887,6 +884,7 @@
             <aside class="notes">
               <ul>
                 <li>Here are a couple screen shots of the D3 graphs that were part of the Teacher Dashboard</li>
+                <li>[FIRE]</li>
                 <li>First, we wanted to establish the domain language for the patterns of the D3 graphs</li>
                 <li>Graphs are made up of SVG images so designers could remain in control of the art direction</li>
                 <li>Developers can hook into D3 events to product the dynamic graphs</li>
@@ -982,6 +980,7 @@ svg.selectAll("image")
             <aside class="notes">
               <ul>
                 <li>The results</li>
+                <li>[FIRE]</li>
                 <li>This is what our building blocks look like once we take apart the complex graph</li>
                 <li></li>
               </ul>
@@ -1018,7 +1017,9 @@ svg.selectAll("image")
             </ul>
             <aside class="notes">
               <ul>
+                <li>[FIRE]</li>
                 <li>Originally hired for two months, extended for an additinal 4 to continue adding resolution to our framework and support.</li>
+                <li>[FIRE]</li>
                 <li>Prototype helped increase the number of students in the user testing pool.</li>
                 <li>Delivered new features on a weekly basis to the testing team - v1 of teacher dashboard</li>
                 <li>Onboarding developers to D3 JavaScript library</li>
