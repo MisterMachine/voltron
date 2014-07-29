@@ -913,13 +913,13 @@ var svg = d3.select(".scatterplot")
   .attr("width", w)
   .attr("height", h);
 
-// Set default background fill for SVG
+//Set default background fill for SVG
 svg.append("rect")
   .attr("width", w)
   .attr("height", h)
   .attr("fill", "#f9f9f9");
 
-// Add the data
+//Add the data
 svg.selectAll("circle")
   .data(dataset)
   .enter()
