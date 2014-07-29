@@ -235,15 +235,16 @@
             <h1 class="serif">Ngaged Explores Distance Learning</h1>
             <ul>
               <li class="fragment"><strong>NYU</strong> needs their archive of course material to be searchable/indexable and to increase enrollment numbers.</li>
-              <li class="fragment"><strong>Students</strong> need access to course material outside the classroom, and to engage with the professor directly.</li>
-              <li class="fragment"><strong>Teachers</strong> need tools to annotate course material and to evaluate student engagement.</li>
+               <li class="fragment"><strong>Teachers</strong> need tools to annotate course material and to evaluate student engagement.</li>
+               <li class="fragment"><strong>Students</strong> need access to course material outside the classroom, and to engage with the professor directly.</li>
             </ul>
             <aside class="notes">
               <ul>
                 <li>NYU is contracted Ngaged to help them improve their distance learning strategy.</li>
                 <li>NYU had already invested in a system for archiving their classroom material</li>
-                <li>Students are more non-traditional and learning is more distributed. They also need to engage with the course professor more directly.</li>
-                <li>Meanwhile as teachers invest more time in online course ware they need better tools for authoring material and evaluating student engagement overtime.</li>
+                <li>As teachers invest more time in online courseware they need better tools for authoring material and evaluating student engagement overtime.</li>
+                <li>Meanwhile students are more non-traditional and learning is more distributed. They also need to engage with the course professor more directly.</li>
+                
               </ul>
             </aside>
 
@@ -349,10 +350,10 @@
               </figure>
             <aside class="notes">
               <ul>
-                <li>Usability testing revealed that there was no default size or orientation</li>
-                <li>Created families of interations</li>
+                <li>Usability testing and a user survey revealed that there was no default size or orientation</li>
+                <li>We created families of interations out of the desired feature set</li>
                 <li>Determined which interactions were primary</li>
-                <li>Primary interactions were thos that would trigger a chain of smaller interactions</li>
+                <li>Primary interactions were those that would trigger a chain of smaller interactions</li>
               </ul>
             </aside>
           </section>
@@ -371,8 +372,8 @@
             <aside class="notes">
               <ul>
                 <li>Here is an example of the primary bookmarking interaction</li>
-                <li>It is persistent throughout the most wires and user stories. It is the trigger for Notetaking Discussions and Questions.</li>
-                <li>Bookmarking is the entrypoint here that marks time</li>
+                <li>It is persistent throughout the most wires and user stories and is the trigger for Notetaking, Discussions and Questions.</li>
+                <li>Bookmarking is the Primary entrypoint here that allows a student to mark time</li>
                 <li>All secondary actions span from this primary bookmarking interaction</li>
               </ul>
             </aside>
@@ -391,7 +392,7 @@
             <aside class="notes">
               <ul>
                 <li>Here we see how complex it is to create wireframes that illustrate a single user story & do that responsively</li>
-                <li>We reached the conclution that this would be much clearer to developers if we provide a prototype</li>
+                <li>We reached the conclution that this would be much clearer to developers if we provided a prototype</li>
                 <li>Part of our job was also to help UX designers talk to Developers and this would be that tool</li>
               </ul>
             </aside>
@@ -412,7 +413,7 @@
               <ul>
                 <li>Rather than trying to describe responsive interactions, we built them</li>
                 <li>Building the protype allowed us to discover and tune interactions that we would not have seen otherwise</li>
-                <li>Flexible grids also helps us define animations and transitions</li>
+                <li>Flexible grids also helps us define animations and transitions for collapsable page containers which would eventually become part of the brand language along with static style rules.</li>
               </ul>
             </aside>
           </section>
@@ -424,15 +425,15 @@
               <ul class="details fragment left">
                 <li>Off canvas events contained many interactions.</li>
                 <li>Each device UI also produced variations that needed to be allowed for.</li>
-                <li>Prototyping allowed us to say "Ah hah! see what I mean"</li>
+                <li>A prototype is a great test of flexiblity and interstitial events</li>
               </ul>
             </figure>
             
             <aside class="notes">
               <ul>
                 <li>Most features were contained in off canvas events.</li>
-                <li>When switching between events we needed to string together multiple user stories</li>
-                <li>A prototype is a great test of flexiblity and interstitial events</li>
+                <li>As in this example on screen you can see that native device off canvas elements also needed to be considered. </li>
+                <li>With the canvas objects changing so much, prototyping revealed more of the story and allowed us to say "Ah hah! see what I mean" to describe certain interstitial events.</li>
               </ul>
             </aside>
           </section>
@@ -499,8 +500,8 @@
             <aside class="notes">
               <ul>
                 <li>By breaking our sass files into components that both designers and developers understand, we create a communication bridge between theme</li>
-                <li>Global, Modules and Pages describes our three tiered structure.</li>
-                <li>Global defines Brand rules. Modules define objects and functions within the application and we reserve sizing and positioning for Page files. </li>
+                <li>Global, Modules and Views describe a three tiered structure.</li>
+                <li>Global defines Brand rules. Modules define unique components within the application and we reserve layout and positioning for View files. </li>
               </ul>
             </aside>
           </section>
@@ -545,7 +546,7 @@
             <aside class="notes">
               <ul>
                 <li>We want our markup components to be as universal as possible. In order to do this we needed to lose grid classes.</li>
-                <li>We use Sass to define Page templates independent of our Module and Brand definitions.</li>
+                <li>We use Sass to define View templates independent of our Module and Brand definitions.</li>
                 <li>This is only possible with Responsive Design and Sass </li>
               </ul>
             </aside>
@@ -564,9 +565,10 @@
             </figure>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Another benefit of a Pattern Library is the ability to capture sigle page prototypes. </li>
+                <li>Some modules such as the Timeline within the Ngaged app undergo drastic changes from Mobile to Desktop</li>
+                <li>Our rule of thumb is to design each component mobile first and then layer in enhancements at each breakpoint.</li>
+                <li>In the example the timeline scrubs vertically within reach of the thumb and then horizontally anticipating a mouse on desktop.</li>
               </ul>
             </aside>
           </section>
@@ -583,9 +585,9 @@
             </figure>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Design after browser is what we call visual aesthetics that are added after the production code is in development.</li>
+                <li>More people advocate to reduce a dependency on Photoshop but we find that you should use the tool when it brings the most value to the product.</li>
+                <li>At this stage we are picking up where the front end has left off and can now focus on the subtle details.</li>
               </ul>
             </aside>
           </section>
@@ -601,9 +603,8 @@
             </figure>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Where code is good for establishing consistency and variables, I like Photoshop for sletching.</li>
+                <li>Exploring art direction through element collage allows me to see variations without code bloat.</li>
               </ul>
             </aside>
           </section>
@@ -646,9 +647,9 @@
             </figure>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Layer structure inherited and was informed by the source order of the application</li>
+                <li>All of the work we've done has established the domain language for the application</li>
+                <li>It's under appreciated how much this helps team members across silos to talk about the applicaton using the same words</li>
               </ul>
             </aside>
           </section>
@@ -664,9 +665,11 @@
             </ul>
             <aside class="notes">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Funding</li>
+                <li>Evangelized Sass </li>
+                <li>Train team to communicate w/ vendors</li>
+                <li>Featured on TedTalks</li>
+                <li>Empowered UX team </li>
               </ul>
             </aside>
           </section>
